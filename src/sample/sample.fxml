@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Label alignment="CENTER" layoutX="57.0" layoutY="200.0" text="Waga" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="53.0" layoutY="265.0" text="Wzrost">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="waga" alignment="CENTER" layoutX="14.0" layoutY="229.0" onKeyTyped="#restrictNumbersOnly" prefHeight="25.0" prefWidth="124.0" text="80" />
+    <TextField fx:id="wzrost" alignment="CENTER" layoutX="14.0" layoutY="284.0" prefHeight="25.0" prefWidth="124.0" text="180" />
+    <Label layoutX="146.0" layoutY="233.0" text="kg" />
+    <Label layoutX="145.0" layoutY="279.0" text="cm" />
+    <Label layoutX="115.0" layoutY="359.0" text="BMI">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label fx:id="output" alignment="CENTER" ellipsisString="" layoutX="14.0" layoutY="359.0" prefHeight="17.0" prefWidth="99.0" text="_______________">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="39.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleButtonAction" text="PRZELICZ" />
+    <Accordion />
+    <Label fx:id="k1" alignment="CENTER" layoutX="190.0" layoutY="200.0" text="&lt; 16 - wygłodzenie" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k2" alignment="CENTER" layoutX="190.0" layoutY="223.0" text="16 - 16,99 - wychudzenie" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k3" alignment="CENTER" layoutX="190.0" layoutY="245.0" text="17 - 18,49 - niedowaga" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k4" alignment="CENTER" layoutX="190.0" layoutY="269.0" text="18,5 - 24,99 - waga prawidłowa" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k5" alignment="CENTER" layoutX="190.0" layoutY="293.0" text="25 - 29,99 - nadwaga" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k6" alignment="CENTER" layoutX="190.0" layoutY="316.0" text="30 - 34,99 - I stopień otyłości" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k7" alignment="CENTER" layoutX="190.0" layoutY="342.0" text="35 - 39,99 - II stopień otyłości" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="k8" alignment="CENTER" layoutX="190.0" layoutY="366.0" text="&gt; 40  - otyłość skrajna" textAlignment="CENTER">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Line endX="11.0" endY="192.0" layoutX="169.0" layoutY="200.0" startX="11.0" />
+    <Accordion />
+    <ImageView layoutX="39.0" layoutY="14.0" pickOnBounds="true">
+        <Image url="@../Images/images.png" />
+    </ImageView>
+   <Accordion />
+   <Accordion />
+   <Accordion />
+   <Accordion />
+</AnchorPane>
